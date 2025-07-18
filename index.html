@@ -1,57 +1,65 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="ur" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ویڈیو لنک</title>
+    <title>ویڈیو پلے کریں</title>
     <style>
         body {
-            background-color: black;
+            font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #f5f5f5;
+            padding: 20px;
         }
-        .image-container {
-            margin-top: 50px;
+        .video-container {
+            margin: 20px auto;
+            max-width: 720px;
+            background-color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        img {
+        video {
             width: 100%;
-            max-width: 600px;
-            height: auto;
-            cursor: pointer;
+            display: block;
+        }
+        .telegram-link {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0088cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .telegram-link:hover {
+            background-color: #006699;
         }
     </style>
 </head>
 <body>
-
-    <div class="top-ad-container">
-        <script type="text/javascript">
-            atOptions = {
-                'key' : '84b5b5cae8b2ea5600e904d69104848a',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-            };
-        </script>
-        <script type="text/javascript" src="//www.highperformanceformat.com/84b5b5cae8b2ea5600e904d69104848a/invoke.js"></script>
+    <h1>ویڈیو دیکھیں</h1>
+    
+    <div class="video-container">
+        <video controls>
+            <source src="https://st25.febspot.com/remote_control.php?time=1752821932&cv=9f096b1209bf6872d1f01b995d1dcde6&lr=0&cv2=8774adef7d1c33e4e94ed66800e900c9&file=/videos/2870000/2870865/2870865_720p.mp4&cv3=6f466072b403ded75718b0fb3f2d192f&cv4=23d5722b5c4e31f4b332761a977cc318" type="video/mp4">
+            آپ کا براؤزر ویڈیو کو سپورٹ نہیں کرتا۔
+        </video>
     </div>
-
-    <div class="image-container">
-        <a href="https://fahad324235.github.io/Boy-To-Boy/" target="_blank">
-            <img src="https://i.ibb.co/kVHsZpSP/20250210-102135.jpg" alt="Click Here">
-        </a>
-    </div>
-    <div class="ad-container">
-        <script type="text/javascript">
-            atOptions = {
-                'key' : 'dffccb4df3a234d831dd64faa7389024',
-                'format' : 'iframe',
-                'height' : 250,
-                'width' : 300,
-                'params' : {}
-            };
-        </script>
-        <script type="text/javascript" src="//www.highperformanceformat.com/dffccb4df3a234d831dd64faa7389024/invoke.js"></script>
-    </div>
-
+    
+    <p><h1> یہ ویڈیوز ٹیلی گرام پر ملیں گی </h1></p>
+    <a href="t.me/fahadwaran32423" class="telegram-link" target="_blank">
+        ٹیلی گرام پر رابطہ کریں
+    </a>
+<p><h1> 03007472779 </h1></p>
+    
+    <script>
+        // آپ چاہیں تو یہاں جاوا اسکرپٹ کوڈ شامل کر سکتے ہیں
+        // مثال کے طور پر ویڈیو پلے ہونے پر کوئی ایکشن لینے کے لیے
+        document.querySelector('video').addEventListener('play', function() {
+            console.log('ویڈیو پلے ہو رہی ہے');
+        });
+    </script>
 </body>
 </html>
